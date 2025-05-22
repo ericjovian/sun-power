@@ -1,0 +1,116 @@
+.navbar-mobile
+    display: none
+    position: fixed
+    top: 0
+    left: 0
+    right: 0
+    z-index: 1000
+    background-color: #fff
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1)
+    padding: 0
+    flex-direction: row
+    justify-content: space-between
+    align-items: center
+    width: 100%
+    height: 60px
+    &__logo
+        display: flex
+        align-items: center
+        font-size: 24px
+        font-weight: bold
+        color: #333
+        text-decoration: none
+
+        img
+            height: 40px
+            margin-right: 10px
+
+    &__links
+        display: flex
+        gap: 20px
+        align-items: center
+        justify-content: center
+        margin-right: 20px
+
+        a
+            color: #333
+            text-decoration: none
+            font-weight: 500
+            transition: color 0.2s
+
+            &:hover
+                color: #f9a825
+    
+@media (max-width: 768px)
+    // if the screen is less than 768px, make the navbar appear
+
+    .navbar-mobile
+        display: flex
+        flex-direction: column
+        justify-content: space-between
+        align-items: center
+        width: 100%
+        height: 100%
+        padding-bottom: 10px
+        background-color: #fff
+        box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1)
+        z-index: 1000
+        position: fixed
+        top: 0
+
+        &__menu-icon
+            user-select: none
+            position: absolute
+            top: 10px
+            right: 10px
+            width: 40px
+            height: 40px
+            border-radius: 50%
+            display: flex
+            align-items: center
+            justify-content: center
+            width: 40px
+            height: 40px
+            background-color: #f9a825
+            border-radius: 50%
+            cursor: pointer
+            a
+                color: #fff
+                text-decoration: none
+                font-weight: 500
+                transition: color 0.2s
+                user-select: none
+
+                &:hover
+                    color: #f9a825
+
+        &__logo
+            display: flex
+            align-items: center
+            font-size: 24px
+            font-weight: bold
+            color: #333
+            text-decoration: none
+            img
+                height:40px
+                margin-right: 10px
+        &__links
+            display: flex
+            flex-direction: column
+            height: 100%
+            gap: 20px
+            align-items: center
+            justify-content: center
+            margin-right: 20px
+            a
+                color: #333
+                text-decoration: none
+                font-weight: 500
+                transition: color 0.2s
+                user-select: none
+
+                &:hover
+                    color: #f9a825
+
+
+
