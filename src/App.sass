@@ -1,4 +1,4 @@
-// CSS RESET
+// SASS RESET
     
 *, *:before, *:after
     box-sizing: border-box
@@ -49,3 +49,18 @@ input
 .App
   height: 100%
   width: 100vw
+
+body 
+  font-family: 'Lato', sans-serif
+  height: 100%
+  width: 100vw
+  background-color: #a5a5a5
+
+@media (max-width: 768px)
+    body 
+        background-color: #f0f0f0
+    .App
+        height: auto
+        width: 100vw
+        background-color: #f0f0f0
+        scroll-behavior: smooth

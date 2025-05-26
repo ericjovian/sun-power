@@ -1,6 +1,6 @@
 import * as React from "react";
 import "./Navbar.sass";
-import { Link, Outlet } from "react-router-dom";
+import { NavLink, Link, Outlet } from "react-router-dom";
 import NavbarMobile from "../NavbarMobile/NavbarMobile";
 import SunPowerLogo from "../../assets/sunpowernobg.png";
 import Footer from "../Footer/Footer";
@@ -21,21 +21,51 @@ const Navbar: React.FC = () => {
         </div>
         <ul className="navbar__links">
           <li>
-            <Link to="/">Home</Link>
+            <NavLink
+              to="/"
+              className={({ isActive }: { isActive: boolean }) =>
+                isActive ? "navbar__link navbar__link--active" : "navbar__link"
+              }
+            >
+              Home
+            </NavLink>
           </li>
           <li>
-            <Link to="/products">Products</Link>
+            <NavLink
+              to="/products"
+              className={({ isActive }: { isActive: boolean }) =>
+                isActive ? "navbar__link navbar__link--active" : "navbar__link"
+              }
+            >
+              Products
+            </NavLink>
           </li>
           <li>
-            <Link to="/about">About Us</Link>
+            <NavLink
+              to="/about"
+              className={({ isActive }: { isActive: boolean }) =>
+                isActive ? "navbar__link navbar__link--active" : "navbar__link"
+              }
+            >
+              About Us
+            </NavLink>
           </li>
           <li>
-            <Link to="/contact">Contact Us</Link>
+            <NavLink
+              to="/contact-us"
+              className={({ isActive }: { isActive: boolean }) =>
+                isActive ? "navbar__link navbar__link--active" : "navbar__link"
+              }
+            >
+              Contact Us
+            </NavLink>
           </li>
         </ul>
       </nav>
       <div>
-        <Outlet />
+        <div className="outlet-container">
+          <Outlet />
+        </div>
         <Footer />
       </div>
     </>

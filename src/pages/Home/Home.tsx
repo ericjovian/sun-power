@@ -42,12 +42,6 @@ const Home: React.FC = () => {
       <div className="home__carousel">
         <Carousel slides={slides} />
       </div>
-      <h1>Welcome to Sun Power</h1>
-      <p>
-        Di <span className="home__brand">Sun Power</span>, kami menjual berbagai
-        variasi merk generator dengan kualitas dan harga optimum yang dapat
-        memenuhi kebutuhan anda.
-      </p>
     </div>
   );
 };
