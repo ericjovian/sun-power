@@ -1,8 +1,8 @@
 import React from "react";
 import "./Contacts.sass";
 import Card from "../../components/Card/Card";
-import LocationPin from "../../assets/location_pin.webp";
-import ArrowRight from "../../assets/arrow-right.svg";
+import LocationPin from "../../assets/logos/location_pin.webp";
+import ArrowRight from "../../assets/logos/arrow-right.svg";
 
 const Contacts: React.FC = () => {
   return (
@@ -44,7 +44,7 @@ const Contacts: React.FC = () => {
           T: 021-29017235
           <span className="contacts__link">
             <a
-              href="https://goo.gl/maps/1Z5b7c4z8kF2"
+              href="https://www.google.com/maps/dir//Jl.+Pemda+Tigaraksa+No.88,+Sukamulya,+Kec.+Cikupa,+Kabupaten+Tangerang,+Banten+15710/@-6.2301364,106.5032496,21z/data=!4m9!4m8!1m0!1m5!1m1!1s0x2e4207330826fa59:0xfac3de6109433b26!2m2!1d106.5033794!2d-6.230123!3e0?entry=ttu&g_ep=EgoyMDI1MDUyMS4wIKXMDSoASAFQAw%3D%3D"
               target="_blank"
               rel="noopener noreferrer"
             >

@@ -2,7 +2,7 @@ import * as React from "react";
 import "./Navbar.sass";
 import { NavLink, Link, Outlet } from "react-router-dom";
 import NavbarMobile from "../NavbarMobile/NavbarMobile";
-import SunPowerLogo from "../../assets/sunpowernobg.png";
+import SunPowerLogo from "../../assets/logos/sunpowernobg.png";
 import Footer from "../Footer/Footer";
 
 const Navbar: React.FC = () => {
@@ -30,16 +30,7 @@ const Navbar: React.FC = () => {
               Home
             </NavLink>
           </li>
-          <li>
-            <NavLink
-              to="/products"
-              className={({ isActive }: { isActive: boolean }) =>
-                isActive ? "navbar__link navbar__link--active" : "navbar__link"
-              }
-            >
-              Products
-            </NavLink>
-          </li>
+
           <li>
             <NavLink
               to="/about"
@@ -52,7 +43,17 @@ const Navbar: React.FC = () => {
           </li>
           <li>
             <NavLink
-              to="/contact-us"
+              to="/products"
+              className={({ isActive }: { isActive: boolean }) =>
+                isActive ? "navbar__link navbar__link--active" : "navbar__link"
+              }
+            >
+              Products
+            </NavLink>
+          </li>
+          <li>
+            <NavLink
+              to="/contacts"
               className={({ isActive }: { isActive: boolean }) =>
                 isActive ? "navbar__link navbar__link--active" : "navbar__link"
               }

@@ -1,6 +1,6 @@
 import React from "react";
 import "./Notfound.sass";
-import SunPowerLogo from "../../assets/sunpower.png";
+import SunPowerLogo from "../../assets/logos/sunpower.png";
 import BackButton from "../../components/BackButton/BackButton";
 
 const NotFound: React.FC = () => {

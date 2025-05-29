@@ -4,8 +4,8 @@ import Navbar from "../components/Navbar/Navbar";
 import NotFound from "../pages/Notfound/Notfound";
 import Home from "../pages/Home/Home";
 import Products from "../pages/Products/Products";
-import ContactUs from "../pages/ContactUs/ContactUs";
 import Contacts from "../pages/Contacts/Contacts";
+import About from "../pages/About/About";
 
 const routes = () => {
   return (
@@ -13,8 +13,13 @@ const routes = () => {
       <Routes>
         <Route path="/" element={<Navbar />}>
           <Route path="/products" element={<Products />} />
-          <Route path="/contact-us" element={<ContactUs />} />
           <Route path="/contacts" element={<Contacts />} />
+          <Route path="/about" element={<About />} />
+
+          {/* Uncomment the following lines when the components are ready */}
+          {/* <Route path="/products/containerized" element={<Containerized />} />
+              <Route path="/products/open" element={<Open />} />
+              <Route path="/products/silent" element={<Silent />} /> */}
           {/* <Route path="/menu" element={<Menu />} />
               <Route path="/games" element={<Games />} />
               <Route path="/profile" element={<Profile />} />

@@ -2,7 +2,7 @@ import * as React from "react";
 import { useState } from "react";
 import "./NavbarMobile.sass";
 import { Link, NavLink } from "react-router-dom";
-import SunPowerLogo from "../../assets/sunpowernobg.png";
+import SunPowerLogo from "../../assets/logos/sunpowernobg.png";
 const NavbarMobile: React.FC = () => {
   const [isOpen, setIsOpen] = useState(false);
 
@@ -24,18 +24,18 @@ const NavbarMobile: React.FC = () => {
             />
           </Link>
         </div>
-        <div className="navbar-mobile__menu-icon" onClick={toggleMenu}>
+        <button className="navbar-mobile__menu-icon" onClick={toggleMenu}>
           {isOpen ? "✖" : "☰"}
-        </div>
+        </button>
       </div>
       <div
         className={`navbar-mobile__overlay${isOpen ? " open" : ""}`}
         onClick={closeMenu}
       />
       <nav className={`navbar-mobile__menu${isOpen ? " open" : ""}`}>
-        <div className="navbar-mobile__menu-icon__open" onClick={toggleMenu}>
+        <button className="navbar-mobile__menu-icon__open" onClick={toggleMenu}>
           {isOpen ? "✖" : "☰"}
-        </div>
+        </button>
         <ul className="navbar-mobile__links">
           <li onClick={closeMenu}>
             <NavLink
