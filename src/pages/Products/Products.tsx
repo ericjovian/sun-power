@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React from "react";
 import "./Products.sass";
 import Carousel from "../../components/Carousel/Carousel";
 
@@ -26,7 +26,6 @@ import Cummins from "../../assets/brands/cummins.png";
 import Isuzu from "../../assets/brands/isuzu.png";
 import Fawde from "../../assets/brands/fawde.png";
 import Deutz from "../../assets/brands/deutz.png";
-import Faw from "../../assets/brands/faw.png";
 
 // Create an array of images
 const slides = [

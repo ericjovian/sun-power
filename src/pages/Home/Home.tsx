@@ -26,8 +26,6 @@ import JWMarriotGenset from "../../assets/gensets/jwg.png";
 import KratonGenset from "../../assets/gensets/kratong.png";
 import VolkopiGenset from "../../assets/gensets/volkopig.png";
 
-import CEO from "../../assets/CEO.jpg";
-
 const Home: React.FC = () => {
   return (
     <>
