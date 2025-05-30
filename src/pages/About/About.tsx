@@ -1,9 +1,9 @@
 import React from "react";
 import "./About.sass";
 import SunPower from "../../assets/logos/sunpower.png";
-import CEO from "../../assets/ceo.jpg";
-import CEOcool from "../../assets/CEOcool.jpg";
-import CEOswag from "../../assets/CEOswag.jpg";
+import CEO from "../../assets/CEO.webp";
+import CEOcool from "../../assets/CEOcool.webp";
+import CEOswag from "../../assets/CEOswag.webp";
 
 const About: React.FC = () => {
   return (

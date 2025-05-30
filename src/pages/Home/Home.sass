@@ -230,5 +230,58 @@
           text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
           z-index: 2
 
-        
+@media (max-width: 768px)
+  .home
+    &__gensets 
+      padding: 0 20px
+      flex-direction: column;
+      &__image 
+        width: 100%;
+        height: auto;
+        object-fit: cover;
+        animation: none; // Disable animation on mobile
 
+    &__headline
+      & h1      
+        font-size: 1.3rem;
+
+    &__content 
+      &__title
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        & h1
+          font-size: 1.5rem;
+        &__logo 
+          width: 8rem;
+
+      &__points
+        padding: 0 20px;
+        &>ul
+          flex-direction: column
+          align-items: center;
+          & h2
+            font-size: 1.2rem;
+            text-align: center;
+          & li
+            width: 100%;
+            text-align: center;
+            margin: 0
+            &>p
+              font-size: 1rem;
+              margin-bottom: 20px;
+        & img
+          width: 3rem;
+          height: 3rem;
+          margin: auto
+
+      &__portfolio
+        padding: 0 20px;
+        &>h1
+          font-size: 1.5rem;
+        & p
+          font-size: 1rem;
+        & ul
+          flex-direction: column;
+          align-items: center;
+          gap: 10px;
