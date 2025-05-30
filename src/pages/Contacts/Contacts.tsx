@@ -69,7 +69,7 @@ const Contacts: React.FC = () => {
           T: 061-6854888, 061-6854268, 061-6854258
           <span className="contacts__link">
             <a
-              href="https://goo.gl/maps/1Z5b7c4z8kF2"
+              href="https://maps.app.goo.gl/KSSbdnRMKFazt3Bu8"
               target="_blank"
               rel="noopener noreferrer"
             >

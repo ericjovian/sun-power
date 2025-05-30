@@ -24,7 +24,7 @@ import Doosan from "../../assets/brands/doosan.png";
 import Lovol from "../../assets/brands/lovol.png";
 import Cummins from "../../assets/brands/cummins.png";
 import Isuzu from "../../assets/brands/isuzu.png";
-import Fawde from "../../assets/brands/fawde.png";
+import Fawde from "../../assets/brands/faw.png";
 import Deutz from "../../assets/brands/deutz.png";
 
 // Create an array of images

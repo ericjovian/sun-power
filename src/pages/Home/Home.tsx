@@ -110,7 +110,7 @@ const Home: React.FC = () => {
                     className="home__card__ceo"
                   />
                   <p className="home__card__ceo__text">
-                    8 Units of 2000 kva Open Type MTU
+                    8 Units of 2000 kva Open Type MTU genset
                   </p>
                 </li>
                 <li className="home__card">
