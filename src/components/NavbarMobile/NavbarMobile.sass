@@ -1,7 +1,8 @@
 .navbar-mobile
-    position: relative
+    position: absolute
     display: none
-
+    top: -1000px
+    left: -1000px
     &__logo
         display: flex
         align-items: center
@@ -28,6 +29,12 @@
     &__link--active 
         color: #ff9800 !important
         font-weight: bold !important
+
+    &__menu
+        display: none
+    &__overlay
+        display: none
+
 @media (max-width: 768px)
     .navbar-mobile
         position: fixed
@@ -60,6 +67,8 @@
             cursor: pointer
             user-select: none
             color: #222
+            padding: auto
+            background: transparent
 
             &__open
                 position: fixed
@@ -79,63 +88,66 @@
                 background: transparent
                 color: #222
         &__link--active 
-            color: #ff9800 !important
-            font-weight: bold !important
+            color: #ff9800
+            font-weight: bold 
+            border-bottom: 2px solid #ff9800
 
-    .navbar-mobile__overlay
-        position: fixed
-        top: 0
-        left: 0
-        width: 100vw
-        height: 100vh
-        background: rgba(0,0,0,0.3)
-        opacity: 0
-        pointer-events: none
-        transition: opacity 0.3s ease
-        z-index: 1000
+        &__overlay
+            display: block
+            position: fixed
+            top: 0
+            left: 0
+            width: 100vw
+            height: 100vh
+            background: rgba(0,0,0,0.3)
+            opacity: 0
+            pointer-events: none
+            transition: opacity 0.3s ease
+            z-index: 1000
 
-        &.open
-                opacity: 1
-                pointer-events: auto
+            &.open
+                    opacity: 1
+                    pointer-events: auto
 
-    .navbar-mobile__menu
-        position: fixed
-        top: 0
-        right: 0
-        width: 70vw
-        max-width: 320px
-        height: 100vh
-        background: #fff
-        box-shadow: -2px 0 8px rgba(0,0,0,0.08)
-        transform: translateX(100%)
-        transition: transform 0.3s cubic-bezier(0.4,0,0.2,1)
-        z-index: 1002
-        display: flex
-        flex-direction: column
-        padding-top: 4rem
+        &__menu
+            position: fixed
+            top: 0
+            right: 0
+            width: 70vw
+            max-width: 320px
+            height: 100vh
+            background: #fff
+            box-shadow: -2px 0 8px rgba(0,0,0,0.08)
+            transform: translateX(100%)
+            transition: transform 0.3s cubic-bezier(0.4,0,0.2,1)
+            z-index: 1002
+            display: flex
+            flex-direction: column
+            padding-top: 4rem
 
-        &.open
-            transform: translateX(0)
+            &.open
+                transform: translateX(0)
 
-    .navbar-mobile__links
-        list-style: none
-        padding: 0
-        margin: 0
-        display: flex
-        flex-direction: column
-        gap: 2rem
+        &__links
+            list-style: none
+            padding: 0
+            margin: 0
+            display: flex
+            flex-direction: column
+            gap: 1.5rem
 
-        li
-            padding: 0 1rem
-            text-align: left
+            li
+                padding: 0 1rem
+                text-align: left
 
-        a
-            text-decoration: none
-            color: #222
-            font-size: 1.2rem
-            font-weight: 500
-            transition: color 0.2s
-
-        &:hover
-            color: #f9b233
+            a
+                text-decoration: none
+                color: #222
+                font-size: 1rem
+                font-weight: 700
+                transition: color 0.2s
+                padding: 0.5rem 0
+                
+            &:hover
+                color: #f9b233
     

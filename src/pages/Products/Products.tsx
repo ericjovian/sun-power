@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import "./Products.sass";
 import Carousel from "../../components/Carousel/Carousel";
 
@@ -46,6 +46,9 @@ const slides = [
 ];
 
 const Products: React.FC = () => {
+  useEffect(() => {
+    document.title = "Products | Sun Power";
+  }, []);
   return (
     <div className="products">
       <div className="products__carousel">

@@ -7,7 +7,7 @@
         padding-bottom: 40px
         font-size: 1.2rem
         font-weight: 500
-        width: 45%
+        width: 50%
         &__logo
             width: auto
             height: 150px
@@ -26,7 +26,7 @@
         flex-direction: row;
         justify-content: center
         align-items: center;
-        width: 50%;
+        width: 40%;
         gap: 10px;
         &__leftimg
             height: 500px;
@@ -46,7 +46,8 @@
         
 
     &__visionmission
-        padding:40px 120px
+        padding: 20px 120px
+        padding-bottom: 40px
         background-color: #f5f5f5
         display: flex
         justify-content: space-between
@@ -67,6 +68,15 @@
             font-weight: 500
             width: 45%
             margin-top: 20px
+    .contacts
+        height: auto
+    &__locations
+        padding: 40px 120px
+        &__title
+            font-size: 2rem
+            font-weight: 700
+            color: #E10127
+            margin-bottom: 20px
 
 @media (max-width: 768px)
     .about
@@ -78,6 +88,7 @@
             padding: 20px;
             &__logo
                 height: 100px
+                margin: 0 auto
             &__description
                 font-size: 1rem
                 line-height: 1.2rem
@@ -104,3 +115,12 @@
                 margin-top: 10px;
                 font-size: 1rem;
                 text-align: left;
+        .contacts
+            height: auto
+        &__locations
+            padding: 20px;
+            &__title
+                text-align: center;
+                width: 100%;
+                font-size: 1.5rem;
+                margin-bottom: 10px;

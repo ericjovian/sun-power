@@ -1,11 +1,23 @@
-import React from "react";
+import React, { useEffect } from "react";
 import "./About.sass";
 import SunPower from "../../assets/logos/sunpower.png";
 import CEO from "../../assets/CEO.webp";
 import CEOcool from "../../assets/CEOcool.webp";
 import CEOswag from "../../assets/CEOswag.webp";
+import Contacts from "../Contacts/Contacts";
+import { useAppDispatch } from "../../redux/hooks";
+import { setIsLoading } from "../../redux/slices/commonSlice";
 
 const About: React.FC = () => {
+  const dispatch = useAppDispatch();
+  useEffect(() => {
+    document.title = "About Us | Sun Power";
+    dispatch(setIsLoading(true));
+    setTimeout(() => {
+      dispatch(setIsLoading(false));
+    }, 1000); // Simulate loading for 1 second
+  }, [dispatch]);
+
   return (
     <div className="about">
       <div className="about__header">
@@ -80,6 +92,10 @@ const About: React.FC = () => {
             service, continuous improvement, and a focus on sustainability.
           </p>
         </div>
+      </div>
+      <div className="about__locations">
+        <h2 className="about__locations__title">Our Locations</h2>
+        <Contacts />
       </div>
     </div>
   );

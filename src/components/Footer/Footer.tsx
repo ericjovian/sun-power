@@ -19,17 +19,36 @@ const Footer: React.FC = () => {
             <h1>Company</h1>
             <ul className="footer__links">
               <li>
-                <NavLink to="/products" className="footer__link">
-                  Products
-                </NavLink>
-              </li>
-              <li>
-                <NavLink to="/about" className="footer__link">
+                <NavLink
+                  to="/about"
+                  className="footer__link"
+                  onClick={() => {
+                    window.scrollTo({ top: 0, behavior: "smooth" });
+                  }}
+                >
                   About Us
                 </NavLink>
               </li>
               <li>
-                <NavLink to="/contacts" className="footer__link">
+                <NavLink
+                  to="/products"
+                  className="footer__link"
+                  onClick={() => {
+                    window.scrollTo({ top: 0, behavior: "smooth" });
+                  }}
+                >
+                  Products
+                </NavLink>
+              </li>
+
+              <li>
+                <NavLink
+                  to="/contacts"
+                  className="footer__link"
+                  onClick={() => {
+                    window.scrollTo({ top: 0, behavior: "smooth" });
+                  }}
+                >
                   Contact Us
                 </NavLink>
               </li>
@@ -39,17 +58,35 @@ const Footer: React.FC = () => {
             <h1>Products</h1>
             <ul className="footer__links">
               <li>
-                <NavLink to="/products/containerized" className="footer__link">
+                <NavLink
+                  to="/products/containerized"
+                  className="footer__link"
+                  onClick={() => {
+                    window.scrollTo({ top: 0, behavior: "smooth" });
+                  }}
+                >
                   Genset Containerized
                 </NavLink>
               </li>
               <li>
-                <NavLink to="/products/open" className="footer__link">
+                <NavLink
+                  to="/products/open"
+                  className="footer__link"
+                  onClick={() => {
+                    window.scrollTo({ top: 0, behavior: "smooth" });
+                  }}
+                >
                   Genset Open
                 </NavLink>
               </li>
               <li>
-                <NavLink to="/products/silent" className="footer__link">
+                <NavLink
+                  to="/products/silent"
+                  className="footer__link"
+                  onClick={() => {
+                    window.scrollTo({ top: 0, behavior: "smooth" });
+                  }}
+                >
                   Genset Silent
                 </NavLink>
               </li>

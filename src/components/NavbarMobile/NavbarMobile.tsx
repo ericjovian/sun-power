@@ -16,7 +16,12 @@ const NavbarMobile: React.FC = () => {
     <>
       <div className="navbar-mobile">
         <div className="navbar-mobile__logo">
-          <Link to="/">
+          <Link
+            to="/"
+            onClick={() => {
+              window.scrollTo({ top: 0, behavior: "smooth" });
+            }}
+          >
             <img
               src={SunPowerLogo}
               alt="Sun Power Logo"
@@ -25,7 +30,7 @@ const NavbarMobile: React.FC = () => {
           </Link>
         </div>
         <button className="navbar-mobile__menu-icon" onClick={toggleMenu}>
-          {isOpen ? "✖" : "☰"}
+          ☰
         </button>
       </div>
       <div
@@ -34,7 +39,7 @@ const NavbarMobile: React.FC = () => {
       />
       <nav className={`navbar-mobile__menu${isOpen ? " open" : ""}`}>
         <button className="navbar-mobile__menu-icon__open" onClick={toggleMenu}>
-          {isOpen ? "✖" : "☰"}
+          ✖
         </button>
         <ul className="navbar-mobile__links">
           <li onClick={closeMenu}>
@@ -45,20 +50,11 @@ const NavbarMobile: React.FC = () => {
                   ? "navbar-mobile__link navbar-mobile__link--active"
                   : "navbar-mobile__link"
               }
+              onClick={() => {
+                window.scrollTo({ top: 0, behavior: "smooth" });
+              }}
             >
               Home
-            </NavLink>
-          </li>
-          <li onClick={closeMenu}>
-            <NavLink
-              to="/products"
-              className={({ isActive }: { isActive: boolean }) =>
-                isActive
-                  ? "navbar-mobile__link navbar-mobile__link--active"
-                  : "navbar-mobile__link"
-              }
-            >
-              Products
             </NavLink>
           </li>
           <li onClick={closeMenu}>
@@ -69,10 +65,29 @@ const NavbarMobile: React.FC = () => {
                   ? "navbar-mobile__link navbar-mobile__link--active"
                   : "navbar-mobile__link"
               }
+              onClick={() => {
+                window.scrollTo({ top: 0, behavior: "smooth" });
+              }}
             >
               About Us
             </NavLink>
           </li>
+          <li onClick={closeMenu}>
+            <NavLink
+              to="/products"
+              className={({ isActive }: { isActive: boolean }) =>
+                isActive
+                  ? "navbar-mobile__link navbar-mobile__link--active"
+                  : "navbar-mobile__link"
+              }
+              onClick={() => {
+                window.scrollTo({ top: 0, behavior: "smooth" });
+              }}
+            >
+              Products
+            </NavLink>
+          </li>
+
           <li onClick={closeMenu}>
             <NavLink
               to="/contacts"
@@ -81,6 +96,9 @@ const NavbarMobile: React.FC = () => {
                   ? "navbar-mobile__link navbar-mobile__link--active"
                   : "navbar-mobile__link"
               }
+              onClick={() => {
+                window.scrollTo({ top: 0, behavior: "smooth" });
+              }}
             >
               Contact Us
             </NavLink>

@@ -11,7 +11,12 @@ const Navbar: React.FC = () => {
       <NavbarMobile />
       <nav className="navbar">
         <div className="navbar__logo">
-          <Link to="/">
+          <Link
+            to="/"
+            onClick={() => {
+              window.scrollTo({ top: 0, behavior: "smooth" });
+            }}
+          >
             <img
               src={SunPowerLogo}
               alt="Sun Power Logo"
@@ -26,6 +31,9 @@ const Navbar: React.FC = () => {
               className={({ isActive }: { isActive: boolean }) =>
                 isActive ? "navbar__link navbar__link--active" : "navbar__link"
               }
+              onClick={() => {
+                window.scrollTo({ top: 0, behavior: "smooth" });
+              }}
             >
               Home
             </NavLink>
@@ -37,6 +45,9 @@ const Navbar: React.FC = () => {
               className={({ isActive }: { isActive: boolean }) =>
                 isActive ? "navbar__link navbar__link--active" : "navbar__link"
               }
+              onClick={() => {
+                window.scrollTo({ top: 0, behavior: "smooth" });
+              }}
             >
               About Us
             </NavLink>
@@ -47,6 +58,9 @@ const Navbar: React.FC = () => {
               className={({ isActive }: { isActive: boolean }) =>
                 isActive ? "navbar__link navbar__link--active" : "navbar__link"
               }
+              onClick={() => {
+                window.scrollTo({ top: 0, behavior: "smooth" });
+              }}
             >
               Products
             </NavLink>
@@ -57,6 +71,9 @@ const Navbar: React.FC = () => {
               className={({ isActive }: { isActive: boolean }) =>
                 isActive ? "navbar__link navbar__link--active" : "navbar__link"
               }
+              onClick={() => {
+                window.scrollTo({ top: 0, behavior: "smooth" });
+              }}
             >
               Contact Us
             </NavLink>

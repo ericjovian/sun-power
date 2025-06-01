@@ -1,5 +1,7 @@
-import React from "react";
+import React, { useEffect } from "react";
 import "./Home.sass";
+import Slider from "../../components/Slider/Slider";
+
 import Genset1 from "../../assets/gensets/sp.png";
 import Genset2 from "../../assets/gensets/sp2.png";
 import Genset3 from "../../assets/gensets/sp3.png";
@@ -27,6 +29,9 @@ import KratonGenset from "../../assets/gensets/kratong.png";
 import VolkopiGenset from "../../assets/gensets/volkopig.png";
 
 const Home: React.FC = () => {
+  useEffect(() => {
+    document.title = "Home | Sun Power";
+  }, []);
   return (
     <>
       <div className="home">
@@ -171,6 +176,10 @@ const Home: React.FC = () => {
               </ul>
               <p>And many more...</p>
             </div>
+          </div>
+          <div className="home__content__partner">
+            <h1 className="home__content__partner__title">Our Partners</h1>
+            <Slider />
           </div>
         </div>
       </div>

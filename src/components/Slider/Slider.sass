@@ -1,0 +1,37 @@
+@keyframes bannermove
+    0%
+        transform: translateX(0)
+    100%
+        transform: translateX(-50%)
+
+.slider
+    margin: 0
+    padding: 0
+    &__img
+        display: block
+        width: 100%
+        height: auto
+        padding: 0 20px
+    
+    &__article
+        display: flex;
+        width: 150%;
+        animation: bannermove 60s linear infinite;
+        -webkit-animation: bannermove 60s linear infinite;
+
+    &__article.paused
+        -webkit-animation-play-state: paused
+        animation-play-state: paused
+
+    & div
+        width: 100%
+
+    &__list
+        display: flex
+        list-style-type: none
+        flex-direction: row
+        align-items: center
+        justify-content: center
+
+    &__item
+        width: 100%

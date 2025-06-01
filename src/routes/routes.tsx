@@ -6,15 +6,19 @@ import Home from "../pages/Home/Home";
 import Products from "../pages/Products/Products";
 import Contacts from "../pages/Contacts/Contacts";
 import About from "../pages/About/About";
+import Loading from "../components/Loading/Loading";
 
 const routes = () => {
   return (
     <BrowserRouter>
+      <Loading />
+
       <Routes>
         <Route path="/" element={<Navbar />}>
           <Route path="/products" element={<Products />} />
           <Route path="/contacts" element={<Contacts />} />
           <Route path="/about" element={<About />} />
+          <Route path="/loading" element={<Loading />} />
 
           {/* Uncomment the following lines when the components are ready */}
           {/* <Route path="/products/containerized" element={<Containerized />} />
