@@ -2,6 +2,8 @@ import * as React from "react";
 import "./Footer.sass";
 import { NavLink } from "react-router-dom";
 import SunPowerLogo from "../../assets/logos/sunpower.png";
+import Instagram from "../../assets/logos/instagram.svg";
+import Whatsapp from "../../assets/logos/whatsapp.svg";
 
 const Footer: React.FC = () => {
   return (
@@ -114,36 +116,37 @@ const Footer: React.FC = () => {
           </div>
         </div>
         <div className="footer__socials">
-          <h1>Follow Us!</h1>
+          <h1>Let's Connect !</h1>
           <ul className="footer__socials__links">
             <li>
               <a
-                href="https://www.facebook.com/sunpowerindonesia"
+                href="https://wa.me/+6285319988181?text=Hi%20SunPower%2C%20saya%20mau%20tanya%20tentang%20..."
                 target="_blank"
                 rel="noopener noreferrer"
                 className="footer__social-link"
               >
-                Facebook
+                <img src={Whatsapp} alt="WhatsApp" />
               </a>
             </li>
             <li>
               <a
-                href="https://www.instagram.com/sunpowerindonesia/"
+                // href="https://mp.weixin.qq.com/s/ABC123XYZ456"
+                href="https://wa.me/+62811613177?text=Hi%20SunPower%2C%20saya%20mau%20tanya%20tentang%20..."
                 target="_blank"
                 rel="noopener noreferrer"
                 className="footer__social-link"
               >
-                Instagram
+                <img src={Whatsapp} alt="WhatsApp" />
               </a>
             </li>
             <li>
               <a
-                href="https://www.linkedin.com/company/sunpowerindonesia/"
+                href="https://instagram.com/sunpower_genset"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="footer__social-link"
               >
-                LinkedIn
+                <img src={Instagram} alt="Instagram" />
               </a>
             </li>
           </ul>

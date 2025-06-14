@@ -23,26 +23,30 @@
     
     &__mansory
         display: flex;
-        flex-direction: row;
+        flex-direction: column
         justify-content: center
         align-items: center;
-        width: 40%;
+        width: 50%;
         gap: 10px;
         &__leftimg
-            height: 500px;
+            height: auto;
+            width: 500px;
             background-size: cover;
             background-position: center;
             background-repeat: no-repeat;
             border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+
         &__rightimgs
             display: flex;
-            flex-direction: column;
+            flex-direction: row;
             gap: 10px;
             &>img
-                height: 300px;
-                width: 100%;
+                height: auto;
+                width: 280px;
                 object-fit: cover;
                 border-radius: 10px;
+                box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
         
 
     &__visionmission
@@ -71,12 +75,14 @@
     .contacts
         height: auto
     &__locations
-        padding: 40px 120px
+        padding: 20px 120px
         &__title
             font-size: 2rem
             font-weight: 700
             color: #E10127
-            margin-bottom: 20px
+            align-self: center
+            margin: 20px auto
+        
 
 @media (max-width: 768px)
     .about

@@ -3,7 +3,6 @@ import "./Home.sass";
 import Slider from "../../components/Slider/Slider";
 
 import Genset1 from "../../assets/gensets/sp.png";
-import Genset2 from "../../assets/gensets/sp2.png";
 import Genset3 from "../../assets/gensets/sp3.png";
 import Genset4 from "../../assets/gensets/sp4.png";
 
@@ -27,20 +26,24 @@ import TransMartGenset from "../../assets/gensets/transmartg.png";
 import JWMarriotGenset from "../../assets/gensets/jwg.png";
 import KratonGenset from "../../assets/gensets/kratong.png";
 import VolkopiGenset from "../../assets/gensets/volkopig.png";
+import { useAppDispatch } from "../../redux/hooks";
+import { setIsLoading } from "../../redux/slices/commonSlice";
 
 const Home: React.FC = () => {
+  const dispatch = useAppDispatch();
   useEffect(() => {
+    dispatch(setIsLoading(true));
     document.title = "Home | Sun Power";
-  }, []);
+    setTimeout(() => {
+      dispatch(setIsLoading(false));
+    }, 500); // Simulate loading for 1 second
+  }, [dispatch]);
   return (
     <>
       <div className="home">
         <div className="home__gensets">
           <div className="home__gensets__image genset-1">
             <img src={Genset1} alt="Genset" />
-          </div>
-          <div className="home__gensets__image genset-2">
-            <img src={Genset2} alt="Genset" />
           </div>
           <div className="home__gensets__image genset-3">
             <img src={Genset3} alt="Genset" />
@@ -176,6 +179,9 @@ const Home: React.FC = () => {
               </ul>
               <p>And many more...</p>
             </div>
+          </div>
+          <div className="home__content__products">
+            <h1>Our Products</h1>
           </div>
           <div className="home__content__partner">
             <h1 className="home__content__partner__title">Our Partners</h1>

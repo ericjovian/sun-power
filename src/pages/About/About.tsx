@@ -1,22 +1,15 @@
 import React, { useEffect } from "react";
 import "./About.sass";
 import SunPower from "../../assets/logos/sunpower.png";
-import CEO from "../../assets/CEO.webp";
-import CEOcool from "../../assets/CEOcool.webp";
-import CEOswag from "../../assets/CEOswag.webp";
-import Contacts from "../Contacts/Contacts";
-import { useAppDispatch } from "../../redux/hooks";
-import { setIsLoading } from "../../redux/slices/commonSlice";
+import Gudang from "../../assets/gudang.jpg";
+import Open from "../../assets/open.jpg";
+import Containerize from "../../assets/containerize.jpg";
+import Locations from "../../components/Locations/Locations";
 
 const About: React.FC = () => {
-  const dispatch = useAppDispatch();
   useEffect(() => {
     document.title = "About Us | Sun Power";
-    dispatch(setIsLoading(true));
-    setTimeout(() => {
-      dispatch(setIsLoading(false));
-    }, 1000); // Simulate loading for 1 second
-  }, [dispatch]);
+  }, []);
 
   return (
     <div className="about">
@@ -65,13 +58,13 @@ const About: React.FC = () => {
         </div>
         <div className="about__mansory">
           <img
-            src={CEOswag}
+            src={Gudang}
             alt="CEO of Sun Power"
             className="about__mansory__leftimg"
           />
           <div className="about__mansory__rightimgs">
-            <img src={CEO} alt="CEO of Sun Power" />
-            <img src={CEOcool} alt="CEO of Sun Power" />
+            <img src={Containerize} alt="CEO of Sun Power" />
+            <img src={Open} alt="CEO of Sun Power" />
           </div>
         </div>
       </div>
@@ -95,7 +88,7 @@ const About: React.FC = () => {
       </div>
       <div className="about__locations">
         <h2 className="about__locations__title">Our Locations</h2>
-        <Contacts />
+        <Locations />
       </div>
     </div>
   );

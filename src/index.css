@@ -38,6 +38,11 @@ canvas,
 svg {
   display: block;
   max-width: 100%;
+  -webkit-user-drag: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
 }
 /*
   7. Remove built-in form typography styles

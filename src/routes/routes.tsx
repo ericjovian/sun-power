@@ -7,12 +7,13 @@ import Products from "../pages/Products/Products";
 import Contacts from "../pages/Contacts/Contacts";
 import About from "../pages/About/About";
 import Loading from "../components/Loading/Loading";
+import ScreenSaver from "../components/ScreenSaver/ScreenSaver";
 
 const routes = () => {
   return (
     <BrowserRouter>
       <Loading />
-
+      <ScreenSaver />
       <Routes>
         <Route path="/" element={<Navbar />}>
           <Route path="/products" element={<Products />} />

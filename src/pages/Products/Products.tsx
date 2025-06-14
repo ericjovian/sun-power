@@ -18,14 +18,14 @@ import SP50c from "../../assets/gensets/sp50c.jpg";
 import SP313c from "../../assets/gensets/sp313c.jpg";
 import SP350c from "../../assets/gensets/sp350c.jpg";
 
-import Perkins from "../../assets/brands/perkins.png";
-import Yanmar from "../../assets/brands/yanmar.png";
-import Doosan from "../../assets/brands/doosan.png";
-import Lovol from "../../assets/brands/lovol.png";
-import Cummins from "../../assets/brands/cummins.png";
-import Isuzu from "../../assets/brands/isuzu.png";
-import Fawde from "../../assets/brands/faw.png";
-import Deutz from "../../assets/brands/deutz.png";
+import Perkins from "../../assets/brands/perkins.webp";
+import Yanmar from "../../assets/brands/yanmar.webp";
+import Doosan from "../../assets/brands/doosan.webp";
+import Lovol from "../../assets/brands/lovol.webp";
+import Cummins from "../../assets/brands/cummins.webp";
+import Isuzu from "../../assets/brands/isuzu.webp";
+import Fawde from "../../assets/brands/faw.webp";
+import Deutz from "../../assets/brands/deutz.webp";
 
 // Create an array of images
 const slides = [

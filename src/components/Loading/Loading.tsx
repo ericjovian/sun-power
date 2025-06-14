@@ -10,7 +10,7 @@ const Loading: React.FC = () => {
   return (
     <div className="loading">
       <div className="loading__container">
-        <img src={GensetIcon} alt="Genset Icon" className="loading__icon" />
+        <img src={GensetIcon} alt="Genset Icon" className="loading__genset" />
         <img src={SmokeIcon} alt="Smoke Icon" className="loading__smoke" />
       </div>
     </div>
